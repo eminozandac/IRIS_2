@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/quadToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        local:title="Quad" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp">
+                <MvvmCross.Binding.Droid.Views.MvxSpinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="ItemsSource ProfileModels; SelectedItem QuadCellViewModels[0].SelectedProfileModel"
+                    local:MvxItemTemplate="@layout/profilespinneritem"
+                    local:MvxDropDownItemTemplate="@layout/profiledropdownitem" />
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <veg.mediaplayer.sdk.MediaPlayer
+                        android:id="@+id/playerOneView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        local:MvxBind="MediaPlayerViewModel QuadCellViewModels[0].MediaPlayerViewModel; Down QuadCellViewModels[0].ShowLiveCommand" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp">
+                <MvvmCross.Binding.Droid.Views.MvxSpinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="ItemsSource ProfileModels; SelectedItem QuadCellViewModels[1].SelectedProfileModel"
+                    local:MvxItemTemplate="@layout/profilespinneritem"
+                    local:MvxDropDownItemTemplate="@layout/profiledropdownitem" />
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <veg.mediaplayer.sdk.MediaPlayer
+                        android:id="@+id/playerTwoView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        local:MvxBind="MediaPlayerViewModel QuadCellViewModels[1].MediaPlayerViewModel; Down QuadCellViewModels[1].ShowLiveCommand" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp">
+                <MvvmCross.Binding.Droid.Views.MvxSpinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="ItemsSource ProfileModels; SelectedItem QuadCellViewModels[2].SelectedProfileModel"
+                    local:MvxItemTemplate="@layout/profilespinneritem"
+                    local:MvxDropDownItemTemplate="@layout/profiledropdownitem" />
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <veg.mediaplayer.sdk.MediaPlayer
+                        android:id="@+id/playerThreeView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        local:MvxBind="MediaPlayerViewModel QuadCellViewModels[2].MediaPlayerViewModel; Down QuadCellViewModels[2].ShowLiveCommand" />
+                </FrameLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:padding="5dp">
+                <MvvmCross.Binding.Droid.Views.MvxSpinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="ItemsSource ProfileModels; SelectedItem QuadCellViewModels[3].SelectedProfileModel"
+                    local:MvxItemTemplate="@layout/profilespinneritem"
+                    local:MvxDropDownItemTemplate="@layout/profiledropdownitem" />
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                    <veg.mediaplayer.sdk.MediaPlayer
+                        android:id="@+id/playerFourView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        local:MvxBind="MediaPlayerViewModel QuadCellViewModels[3].MediaPlayerViewModel; Down QuadCellViewModels[3].ShowLiveCommand" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <MvvmCross.Binding.Droid.Views.MvxSpinner
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    local:MvxBind="ItemsSource PresetModels; SelectedItem SelectedPresetModel"
+                    local:MvxItemTemplate="@layout/presetspinneritem"
+                    local:MvxDropDownItemTemplate="@layout/presetdropdownitem" />
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter preset name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    local:MvxBind="Text PresetName" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:text="Load"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    local:MvxBind="Click LoadPresetCommand" />
+                <Button
+                    android:text="Save"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    local:MvxBind="Click SavePresetCommand" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

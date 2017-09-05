@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/playbackToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        local:title="Playback" />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <veg.mediaplayer.sdk.MediaPlayer
+            android:id="@+id/playerView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            local:MvxBind="MediaPlayerViewModel MediaPlayerViewModel" />
+    </FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:editable="false"
+            local:MvxBind="Text ProfileModel.Name" />
+        <MvvmCross.Binding.Droid.Views.MvxSpinner
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            local:MvxBind="ItemsSource RestAPIViewModel.Sequences; SelectedItem RestAPIViewModel.SelectedPlaybackItem"
+            local:MvxItemTemplate="@layout/sequencespinnneritem"
+            local:MvxDropDownItemTemplate="@layout/sequencedropdown" />
+        <SeekBar
+            android:enabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            local:MvxBind="Progress MediaPlayerViewModel.Progress, Mode=TwoWay; StartTrackingCommand MediaPlayerViewModel.StartSeekCommand; StopTrackingCommand MediaPlayerViewModel.StopSeekCommand" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                local:MvxBind="Text RestAPIViewModel.StartTime"
+                android:layout_margin="10dp"
+                android:textAlignment="viewStart"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                local:MvxBind="Text RestAPIViewModel.EndTime"
+                android:gravity="center_vertical|right"
+                android:layout_margin="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:gravity="center_horizontal">
+            <ImageButton
+                android:src="@drawable/fastrewind"
+                android:layout_height="48dp"
+                android:layout_width="48dp" />
+            <ImageButton
+                android:src="@drawable/rewind"
+                android:layout_height="48dp"
+                android:layout_width="48dp" />
+            <ImageButton
+                android:src="@drawable/stop"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                local:MvxBind="Click MediaPlayerViewModel.StopCommand" />
+            <ImageButton
+                android:src="@drawable/play"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                local:MvxBind="Click MediaPlayerViewModel.PlayCommand, CommandParameter=1000" />
+            <ImageButton
+                android:src="@drawable/fastforward"
+                android:layout_height="48dp"
+                android:layout_width="48dp"
+                local:MvxBind="Click MediaPlayerViewModel.PlayCommand, CommandParameter=2000" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

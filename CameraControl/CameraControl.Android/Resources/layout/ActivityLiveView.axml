@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rel_header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/navigation_title"
+        android:elevation="1dp">
+        <ImageView
+            android:id="@+id/left_mark"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="7.5dp"
+            android:src="@drawable/IrisIcon" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/left_mark"
+            android:gravity="center_vertical"
+            android:text="IRIS Mobile"
+            android:textColor="@color/light_black"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Live View"
+            android:textColor="@color/light_black"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        <ImageView
+            android:id="@+id/menu_button"
+            android:layout_width="25dp"
+            android:layout_height="21dp"
+            android:layout_margin="9.5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/menu" />
+        <TextView
+            android:id="@+id/serial_number"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/menu_button"
+            android:gravity="center_vertical"
+            android:text="System Serial:IRIS00A"
+            android:textColor="@color/light_black"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/downward_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:id="@+id/downward_button"
+                android:layout_width="40dp"
+                android:layout_height="23dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ArrowRight"
+                android:rotation="90" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/audio_select_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/downward_button_group"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/audio_selecting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="55dp"
+                android:background="@drawable/button_round_border"
+                android:textSize="12sp"
+                android:textColor="@color/gray_color"
+                android:text="Audio Selection" />
+            <TextView
+                android:id="@+id/audio_selecting_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/audio_selecting"
+                android:padding="5dp"
+                android:textSize="12sp"
+                android:textColor="@color/gray_color"
+                android:text="Audio Selection" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/audio_select_group">
+            <RelativeLayout
+                android:id="@+id/backward_button_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp">
+                <ImageView
+                    android:id="@+id/backward_button"
+                    android:layout_width="40dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ArrowRight"
+                    android:rotation="180" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/forward_button_group"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp">
+                <ImageView
+                    android:id="@+id/forward_button"
+                    android:layout_width="40dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ArrowRight" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_above="@id/audio_select_group"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="2.5dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/camera1_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_black"
+                        android:textSize="9sp"
+                        android:text="Camera1" />
+                    <ImageView
+                        android:id="@+id/camera1_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/camera1_title"
+                        android:background="@drawable/button_round_border" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/camera2_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_black"
+                        android:textSize="9sp"
+                        android:text="Camera2" />
+                    <ImageView
+                        android:id="@+id/camera2_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/camera2_title"
+                        android:background="@drawable/button_round_border" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/camera3_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_black"
+                        android:textSize="9sp"
+                        android:text="Camera3" />
+                    <ImageView
+                        android:id="@+id/camera3_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/camera3_title"
+                        android:background="@drawable/button_round_border" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/camera4_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_black"
+                        android:textSize="9sp"
+                        android:text="Camera4" />
+                    <ImageView
+                        android:id="@+id/camera4_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/camera4_title"
+                        android:background="@drawable/button_round_border" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="horizontal">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/camera5_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_black"
+                        android:textSize="9sp"
+                        android:text="Camera5" />
+                    <ImageView
+                        android:id="@+id/camera5_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/camera5_title"
+                        android:background="@drawable/button_round_border" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2.5dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/camera6_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_black"
+                        android:textSize="9sp"
+                        android:text="Officer Safety Camera" />
+                    <ImageView
+                        android:id="@+id/camera6_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/camera6_title"
+                        android:background="@drawable/button_round_border" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

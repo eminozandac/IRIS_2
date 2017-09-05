@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Codec:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:editable="false"
+            local:MvxBind="Text Codec" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="FPS:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:editable="false"
+            local:MvxBind="Text Fps" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Resolution:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:editable="false"
+            local:MvxBind="Text Resolution" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Drop Frames:" />
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="150dp"
+            android:layout_weight="1"
+            android:editable="false"
+            local:MvxBind="Text DroppedFrame" />
+    </LinearLayout>
+</LinearLayout>

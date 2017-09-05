@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp">
+        <ImageView
+            android:id="@+id/iconView"
+            android:src="@drawable/irisicon"
+            android:layout_width="wrap_content"
+            android:layout_height="@android:dimen/app_icon_size" />
+        <TextView
+            android:text="IRIS MOBILE"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_toRightOf="@id/iconView"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+        <TableRow>
+            <TextView
+                android:text="Server IP:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="100dp" />
+            <EditText
+                android:id="@+id/UriText"
+                android:inputType="textUri"
+                android:layout_span="3"
+                android:layout_weight="1"
+                local:MvxBind="Text Uri; Error Errors['Uri']" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="ONVIF Port:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="100dp" />
+            <EditText
+                android:id="@+id/onvifPortText"
+                android:inputType="number"
+                android:layout_weight="1"
+                local:MvxBind="Text OnvifPort; Error Errors['OnvifPort']" />
+            <TextView
+                android:text="RTSP Port:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="100dp"
+                android:layout_marginLeft="10dp" />
+            <EditText
+                android:id="@+id/rtspPortText"
+                android:inputType="number"
+                android:layout_weight="1"
+                local:MvxBind="Text RtspPort; Error Errors['RtspPort']" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Username:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="100dp" />
+            <EditText
+                android:id="@+id/loginText"
+                android:inputType="text"
+                android:layout_span="3"
+                android:layout_weight="1"
+                local:MvxBind="Text LoginViewModel.Username; Error LoginViewModel.Errors['Username']" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="Password:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="100dp" />
+            <EditText
+                android:id="@+id/PasswordText"
+                android:inputType="textPassword"
+                android:layout_span="3"
+                android:layout_weight="1"
+                local:MvxBind="Text LoginViewModel.Password; Error LoginViewModel.Errors['Password']" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <CheckBox
+                android:id="@+id/saveCredentialsCheckBox"
+                android:text="Save Login"
+                android:layout_column="1"
+                android:layout_span="3"
+                android:layout_weight="1"
+                local:MvxBind="Checked LoginViewModel.SaveCredentials" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <Button
+                android:id="@+id/connectButton"
+                android:text="Connect"
+                android:layout_column="1"
+                android:layout_span="3"
+                local:MvxBind="Click ConnectCommand" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

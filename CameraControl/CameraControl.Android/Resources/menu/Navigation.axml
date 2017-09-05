@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:local="http://schemas.android.com/apk/res-auto">
+  <item
+    android:id="@+id/liveAction"
+    android:title="Live"
+    local:showAsAction="never" />
+  <item
+    android:id="@+id/playbackAction"
+    android:title="Playback"
+    local:showAsAction="never" />
+  <item
+    android:id="@+id/quadAction"
+    android:title="Quad"
+    local:showAsAction="never" />
+</menu>

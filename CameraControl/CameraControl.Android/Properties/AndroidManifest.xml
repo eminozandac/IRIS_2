@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="Iris_Mobile.Iris_Mobile">
+	<uses-sdk android:minSdkVersion="15" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <application android:label="Iris Mobile" android:theme="@style/Theme.AppCompat.NoActionBar" android:icon="@drawable/IrisIcon" ></application>
+</manifest>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sdk>
+  <AndroidApiLevel>25</AndroidApiLevel>
+  <AndroidApiLevelName>25</AndroidApiLevelName>
+  <AndroidNdkPath>F:\Program\1.Development\1.Android\AndroidSDK\ndk-bundle</AndroidNdkPath>
+  <AndroidSdkBuildToolsPath>F:\Program\1.Development\1.Android\AndroidSDK\build-tools\26.0.1</AndroidSdkBuildToolsPath>
+  <AndroidSdkBuildToolsBinPath>F:\Program\1.Development\1.Android\AndroidSDK\build-tools\26.0.1</AndroidSdkBuildToolsBinPath>
+  <AndroidSdkPath>F:\Program\1.Development\1.Android\AndroidSDK</AndroidSdkPath>
+  <JavaSdkPath>C:\Program Files\Java\jdk1.8.0_144</JavaSdkPath>
+  <MonoAndroidBinPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Xamarin\Android</MonoAndroidBinPath>
+  <MonoAndroidToolsPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\Xamarin\Android</MonoAndroidToolsPath>
+  <ReferenceAssemblyPaths>
+    <ReferenceAssemblyPath>C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v1.0\</ReferenceAssemblyPath>
+  </ReferenceAssemblyPaths>
+  <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+  <ZipAlignPath>F:\Program\1.Development\1.Android\AndroidSDK\build-tools\26.0.1</ZipAlignPath>
+  <MonoAndroidIncludePath />
+  <SupportedApiLevel>25</SupportedApiLevel>
+  <AndroidSequencePointsMode>None</AndroidSequencePointsMode>
+  <LintToolPath>F:\Program\1.Development\1.Android\AndroidSDK\tools\bin</LintToolPath>
+</Sdk>

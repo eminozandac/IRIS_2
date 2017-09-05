@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/live"
+          android:title="Live" />    
+    <item android:id="@+id/playback_videos"
+          android:title="Playback Videos"/>  
+    <item android:id="@+id/playback_snapshots"
+          android:title="Playback Snapshots"/>
+    <item android:id="@+id/status"
+          android:title="Status"/>
+    <item android:id="@+id/settings"
+          android:title="Settings"/>
+    <item android:id="@+id/logoff"
+          android:title="LogOff"/>
+</menu>

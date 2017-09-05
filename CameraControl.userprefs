@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{1CED08A0-01FB-47B4-8E96-BD0993DD575B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CameraControl/CameraControl.iOS/ViewControllers/PlayVideoTableViewCell.cs">
+    <Files>
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/LiveViewController.cs" Line="87" Column="1" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/LiveViewController.designer.cs" Line="85" Column="3" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/BasicViewController.cs" Line="13" Column="26" />
+      <File FileName="CameraControl/CameraControl.iOS/Views/DropDownMenuView.cs" Line="71" Column="1" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/LoginViewController.cs" Line="48" Column="56" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/SettingsViewController.cs" Line="35" Column="4" />
+      <File FileName="CameraControl/CameraControl.iOS/Main.cs" Line="12" Column="1" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/PlayVideoTableViewCell.cs" Line="21" Column="10" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/FullScreenViewController.cs" Line="39" Column="38" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/PlayVideoViewController.cs" Line="43" Column="4" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/VideoListViewController.cs" Line="104" Column="1" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/VideoListViewController.designer.cs" Line="94" Column="1" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/StatusViewController.cs" Line="45" Column="1" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/SnapshotListViewController.cs" Line="36" Column="6" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/TuneRadiosViewController.cs" Line="40" Column="10" />
+      <File FileName="CameraControl/CameraControl.iOS/Views/StatusProgressView.cs" Line="66" Column="1" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/ViewControllerManager.cs" Line="14" Column="53" />
+      <File FileName="CameraControl/CameraControl.iOS/ViewControllers/PlayVideoTableViewCell.designer.cs" Line="51" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Volumes/Working/Projects/Iris/IRIS_MOBILE_Working/CameraControl/CameraControl.iOS/ViewControllers/VideoListViewController.cs" relfile="CameraControl/CameraControl.iOS/ViewControllers/VideoListViewController.cs" line="104" column="16" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.OnvifWcf.Console PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.CameraControl.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.3C5D3B53-24AE-4A1C-80B4-728344A582AB" />
+</Properties>

@@ -1,0 +1,6 @@
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\RoundCornerProgressBar.Android\bin\Debug\RoundCornerProgressBar.Android.dll
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\RoundCornerProgressBar.Android\bin\Debug\RoundCornerProgressBar.Android.pdb
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\RoundCornerProgressBar.Android\obj\Debug\RoundCornerProgressBar.Android.csprojResolveAssemblyReference.cache
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\RoundCornerProgressBar.Android\obj\Debug\RoundCornerProgressBar.Android.csproj.CoreCompileInputs.cache
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\RoundCornerProgressBar.Android\obj\Debug\RoundCornerProgressBar.Android.dll
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\RoundCornerProgressBar.Android\obj\Debug\RoundCornerProgressBar.Android.pdb

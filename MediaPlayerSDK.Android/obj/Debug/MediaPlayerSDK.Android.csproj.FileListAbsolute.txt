@@ -1,0 +1,6 @@
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\MediaPlayerSDK.Android\bin\Debug\MediaPlayerSDK.Android.dll
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\MediaPlayerSDK.Android\bin\Debug\MediaPlayerSDK.Android.pdb
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\MediaPlayerSDK.Android\obj\Debug\MediaPlayerSDK.Android.csprojResolveAssemblyReference.cache
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\MediaPlayerSDK.Android\obj\Debug\MediaPlayerSDK.Android.csproj.CoreCompileInputs.cache
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\MediaPlayerSDK.Android\obj\Debug\MediaPlayerSDK.Android.dll
+G:\Working\Other\HSR\Iris\Source\IRIS_MOBILE\MediaPlayerSDK.Android\obj\Debug\MediaPlayerSDK.Android.pdb
